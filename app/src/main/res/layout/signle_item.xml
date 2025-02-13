@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6F6E6E">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="6dp"
+        android:background="#368CD5DE">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img2"
+            android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/item_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/itme_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Description"
+                android:layout_toRightOf="@id/item_img"
+                android:layout_below="@id/item_name"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
