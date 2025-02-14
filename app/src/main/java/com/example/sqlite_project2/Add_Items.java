@@ -16,5 +16,6 @@ public class Add_Items extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_add_items);
 
+
     }
 }
