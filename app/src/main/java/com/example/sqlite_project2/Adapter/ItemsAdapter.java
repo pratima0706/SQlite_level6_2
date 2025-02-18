@@ -1,5 +1,6 @@
 package com.example.sqlite_project2.Adapter;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,14 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemViewHold
     public void onBindViewHolder(@NonNull ItemsAdapter.ItemViewHolder holder, int position) {
 
         ItemsModel itemsModel=itemsModels.get(position);
+        holder.textName.setText(itemsModel.getName());
+        holder.textDescription.setText(itemsModel.getDescription());
+
+
+        Uri image=itemsModel.getImage();
+        if(image != null){
+            holder.imageView.setImageURI(image);
+        }
 
 
 
